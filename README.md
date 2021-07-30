@@ -17,7 +17,6 @@ https://laravel.com/docs/8.x/migrations#available-column-types
 
 
 ### Primero
-
 ## Para desplegar con docker
 ``
    docker-compose build
@@ -26,7 +25,6 @@ https://laravel.com/docs/8.x/migrations#available-column-types
 
 
 ### Segundo
-
 ## Para crear un proyecto de cero:
 # En el terminal de la imagen de laravel
 ``
@@ -35,7 +33,6 @@ https://laravel.com/docs/8.x/migrations#available-column-types
 
 
 ### Tercero
-
 ## Para error de permisos carpeta storage en windows
 # En el terminal de la imagen de laravel
 ``
@@ -44,8 +41,17 @@ https://laravel.com/docs/8.x/migrations#available-column-types
 ``
 
 
-### Cuarto
+### Sexto
+### Para Laravel:
+## Para crear controladores (dentro del contenedor):
+## En los controladores metemos la logica de la aplicacion (el acceso a base de datos, etc)
+``
+    php artisan make:controller NombreController
+``
 
+
+### Cuarto
+### Para cuando las vistas estén hechas
 ### Base de datos
 ## Para actualizar la base de datos
 ``
@@ -54,7 +60,6 @@ https://laravel.com/docs/8.x/migrations#available-column-types
 
 
 ### Quinto
-
 ## Para crear una migracion de una tabla
 ``
     php artisan make:migration nombre_de_la_migracion --create=nombre_tabla_siempre_en_plural
@@ -66,18 +71,7 @@ https://laravel.com/docs/8.x/migrations#available-column-types
 ``
 
 
-### Sexto
-### Para Laravel:
-
-## Para crear controladores (dentro del contenedor):
-## En los controladores metemos la logica de la aplicacion (el acceso a base de datos, etc)
-``
-    php artisan make:controller NombreController
-``
-
-
 ### Septimo
-
 ## Para crear un modelo (un modelo es un archivo que permite efectuar operaciones con la base de datos)
 ## Importante siempre el nombre en SINGULAR
 ``
